@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+        
+<context:annotation-config/>
+
+<context:component-scan base-package="com.ait"></context:component-scan> 
+
+        
+<!--<bean  id="s1" class="com.ait.Student"> -->
+<!-- <property name="sid" value="101"></property>-->
+<!--<property name="sname" value="Tushar"></property> -->
+<!--<property name="percent" value="76"></property> -->
+<!--<property name="c" ref="c1"></property> -->
+
+<!--</bean> -->
+
+<!-- <bean  id="s2" class="com.ait.Student" scope="singleton">
+<constructor-arg ref="c1"></constructor-arg>
+</bean> -->
+
+
+<!--<bean id="c1" class="com.ait.Course">
+<constructor-arg name="cname" value="C#"></constructor-arg>
+<constructor-arg name="cfees" value="90000"> </constructor-arg>
+</bean>-->
+
+<!-- <bean id="c" class="com.ait.Course" >
+<constructor-arg name="cname" value="ReactJS"></constructor-arg>
+<constructor-arg name="cfees" value="80000"> </constructor-arg>
+</bean> -->
+
+<!--<bean id="t1" class="com.ait.Trainer" init-method="myinit" destroy-method="destroy">
+<property name="tname" value="Kirti"></property>
+</bean>-->
+
+<!-- <bean  id="s1" class="com.ait.Student" autowire="byType">
+<property name="sid" value="101"></property> -->
+<!--  <property name="sname" value="Tushar"></property>  -->
+<!-- <property name="percent" value="76"></property> -->
+<!-- </bean> --> 
+
+<!-- <bean  id="s4" class="com.ait.Student" autowire = "constructor">
+<constructor-arg value="1" type="int"></constructor-arg>
+<constructor-arg value="Sonal" type="java.lang.String"></constructor-arg>
+<constructor-arg value="78" type="int"></constructor-arg>
+</bean> --> 
+
+
+
+<!-- <bean  id="s3" class="com.ait.Student">
+onstructor-arg value="103"/>
+<constructor-arg value="Geeta"/>
+<constructor-arg value="70"/> -->
+
+<!-- <property name="sname" value="Ganesh"></property>
+</bean> --> 
+
+
+</beans>

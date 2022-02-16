@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+   <bean name="a1" class="com.Collection.Author">
+  <property name="aname" value="Ratnakar Matkari"></property>
+  <property name="books">
+    <list>
+           <value> Mrutyunjayee </value>
+           <value> Nirmanushya </value>
+           <value> Pardeshi </value>
+           <value> Dubhang </value>
+           <value> Ashwamedh </value>
+    
+    </list>
+   </property>
+    
+    <property name="addresses">
+    <set> 
+          <value> Delhi</value>
+          <value> Mumbai</value>
+          <value> Pune</value>
+          <value> Nagpur</value>
+    </set>
+    </property>
+   <property name="data">
+   <map>
+          <entry key="Mrutyunjayee" value="Four Months"></entry>
+          <entry key="Pardeshi" value="Three Months"></entry>
+          <entry key="Nirmanushya" value="Six Months"></entry>
+          
+   </map>
+   
+   </property>
+   
+   </bean>   
+      
+      
+      
+        
+  </beans>
