@@ -111,7 +111,7 @@ public class StudentDaoImplementation implements StudentDao
 	public Student getStudentById(int sid) // 101
 	{
 		try (Connection con = DBConnect.getConnection();
-				PreparedStatement pst = con.prepareStatement(FETCH_STUDENT_SQL))
+			PreparedStatement pst = con.prepareStatement(FETCH_STUDENT_SQL))
 		{
 			pst.setInt(1, sid);
 			ResultSet rs = pst.executeQuery();
